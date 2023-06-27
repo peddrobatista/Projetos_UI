@@ -1,0 +1,52 @@
+html {
+    background: url(windows-11.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 190px;
+    height: 254px;
+    margin: 0 auto;
+    background-color: rgba(75, 74, 74, 0.249);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 2px solid rgb(177, 179, 181);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}  
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}  
+.circle {
+    padding: 0 4px;
+}
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+.red {
+    background-color: #EA2027;
+}
+.yellow {
+    background-color: #FFC312;
+}
+.green {
+    background-color: #00ca4e;
+}

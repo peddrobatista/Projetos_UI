@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gmail Glassmorphism</title>
+</head>
+<body>
+    <div class="card">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="menu-outline"></ion-icon></span>
+                            <img src="gmail.png" class="logo" alt="gmail" width="40px" height="40px">
+                            <span class="title">Gmail</span>
+                        </a>
+                    </li>
+                    <hr class="divider">
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                            <span class="title">Compose</span>
+                        </a>
+                    </li>
+                    <hr class="divider">
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="download-outline"></ion-icon></span>
+                            <span class="title">Inbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                            <span class="title">Starred</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="time-outline"></ion-icon></span>
+                            <span class="title">Snoozed</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="paper-plane-outline"></ion-icon></span>
+                            <span class="title">Sent</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="cloud-outline"></ion-icon></span>
+                            <span class="title">Drafts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="bookmark-outline"></ion-icon></span>
+                            <span class="title">Important</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="trash-outline"></ion-icon></span>
+                            <span class="title">Trash</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            let red = document.querySelector('.red');
+            red.onclick = function() {
+                navigation.classList.toggle('active')
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+html {
+    background: url(windows-11.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    margin: 0 auto;
+    background-color: rgba(75, 74, 74, 0.249);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 2px solid rgb(177, 179, 181);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}  
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px 5px 5px 13px;
+}  
+.circle {
+    padding: 0 4px;
+    cursor: pointer;
+}
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+.red {
+    background-color: #EA2027;
+}
+.yellow {
+    background-color: #FFC312;
+}
+.green {
+    background-color: #00ca4e;
+}
+.card_content {
+    padding: 0px;
+}
+/* Configurações do container de navegação */
+
+.navigation {
+    inset: 10px auto 10px auto;
+    width: 80px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.navigation.active {
+    width: 300px;
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    transition: 0.5s;
+}
+.navigation ul li:hover {
+    background: rgba(127, 140, 141,.45);
+}
+
+/* Elemento primeiro filho */
+
+.navigation ul li:nth-child(1) {
+    background: none;
+    margin-bottom: 0px;
+}
+.navigation.active ul li:first-child a {
+    inset: 7px 0px 0px 2px;
+}
+.navigation ul li:nth-child(1) a .icon {
+    line-height: 0px;
+}
+.navigation.active ul li:nth-child(1) a .title {
+    padding: 0 15px;
+    font-size: 1.70rem;
+    color: #485460;
+    font-weight: 500;
+    line-height: 36px;
+}
+.navigation ul li:nth-child(1) a .title {
+   font-size: 1.70rem;
+   color: #485460;
+   font-weight: 500; 
+}
+/* Configurações do divisor */
+
+hr {
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, 
+    rgba(120,120, 120, 0),
+    rgba(179,179,179, 0.95),
+    rgba(120,120, 120, 0));
+}
+
+/* Elemento terceiro filho*/
+
+.navigation ul li:nth-child(3) {
+    top: 13px;
+    background: #1e90ff;
+    border-radius: 10px;
+    width: 57px;
+    height: 50px;
+    margin: 0px auto 30px auto;
+    transition: 0.5s;
+}
+.navigation ul li:nth-child(3) a {
+    inset: 9px 0px 16px 0px;
+
+}
+.navigation.active ul li:nth-child(3) a {
+    inset: 9px 0px 9px -3px;
+}
+.navigation.active ul li:nth-child(3) a .title{
+    padding: 0 5px;
+}
+.navigation.active ul li:nth-child(3) {
+    border-radius: 10px;
+    margin: 0px auto 30px auto;
+    width: 95%;
+}
+
+/* Configurações gerais dos ícones e textos */
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    inset: 10px;
+    color: #fff;
+}
+.navigation.active ul li a {
+    inset: 7px 0px 16px 2px;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 10px;
+    line-height: 40px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon {
+    font-size: 1.45em;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 34px;
+    text-align: start;
+    white-space: nowrap;
+}
+/* Configurações do logo */
+.navigation ul li:nth-child(1) a .logo {
+    position: relative;
+    margin-left: 10px;
+    bottom: 10px;
+}
+.navigation.active ul li:nth-child(1) a .logo {
+    position: relative;
+    margin-left: 5px;
+    bottom: 10px;
+}

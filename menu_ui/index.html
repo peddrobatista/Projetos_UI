@@ -72,6 +72,17 @@
                             <span class="notifications">12</span>
                         </a>
                     </li>
+                    <hr class="divider">
+                    <li class="change">
+                        <div class="button light">
+                            <span class="icon"><ion-icon name="sunny-outline"></ion-icon></span>
+                            <span class="text">Light</span>
+                        </div>
+                        <div class="button dark">
+                            <span class="icon"><ion-icon name="moon-outline"></ion-icon></span>
+                            <span class="text">Dark</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -81,10 +92,19 @@
     <script>
         let navigation = document.querySelector('.navigation');
         let card_content = document.querySelector('.card_content');
+        let card = document.querySelector('.card');
         let toggle = document.querySelector('.toggle');
+        let light = document.querySelector('.light');
+        let dark = document.querySelector('.dark');
         toggle.onclick = function() {
             navigation.classList.toggle('active');
             card_content.classList.toggle('active');
+        }
+        dark.onclick = function() {
+            card.classList.add('escuro');
+        }
+        light.onclick = function() {
+            card.classList.remove('escuro');
         }
     </script>
 </body>

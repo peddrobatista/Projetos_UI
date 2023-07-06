@@ -169,6 +169,9 @@ body {
     line-height: 59px;
     inset: -9px 12px;
 }
+.card.escuro ul li:nth-child(2) div .icon {
+    color: #fff;
+}
 .navigation ul li:nth-child(2) div input {
     position: relative;
     inset: 0px -25px;
@@ -182,6 +185,12 @@ body {
 }
 .navigation.active li:nth-child(2) div input::placeholder {
     color: #95a5a6;
+}
+.card.escuro .navigation.active li:nth-child(2) div input::placeholder {
+    color: #ced6e0;
+}
+.card.escuro .navigation.active li:nth-child(2) div input {
+    color: #fff;
 }
 /* Configurações do terceiro filho */
 
@@ -231,6 +240,80 @@ body {
 .card_content.active .toggle .back {
     display: block;
 }
+/* Configurações do divisor */
+hr {
+    border: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, 
+    rgba(120,120, 120, 0),
+    rgba(179,179,179, 0.95),
+    rgba(120,120, 120, 0));
+    margin-bottom: 10px;
+}
+/* Configurações do tema dark */
+.navigation ul .change {
+    display: flex;
+    border-radius: 10px;
+    background-color: #d0d1d849;
+    overflow: hidden;
+    margin: 4px auto;
+    width: 90%;
+}
+.navigation.active ul .change {
+    width: 95%;
+}
+.navigation.active ul .change .button .icon {
+    inset: 5px 7px;
+}
+.navigation ul li .button {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    display: flex;
+    text-decoration: none;
+    color: #2d3436;
+    transition: 0.5s;
+    margin: 4px 6px;
+    width: 75%;
+}
+.navigation ul .change .light {
+    background-color: #fff;
+}
+.navigation ul .change .button .icon {
+    position: relative;
+    display: block;
+    line-height: 35px;
+    inset: 5px 10px;
+}
+.navigation ul li .button .icon ion-icon {
+    font-size: 1.30em;
+}
+.navigation ul li .button .text {
+    position: relative;
+    inset: 6px 45px;
+    display: block;
+    font-size: 0.90rem;
+    font-weight: 600;
+    text-align: start;
+    white-space: nowrap;
+}
+.card.escuro {
+    background-color: #2d3436;
+}
+.card.escuro .navigation ul li a {
+    color: #fff;
+}
+.card.escuro .navigation ul .change .button span {
+    color: #fff;
+}
+.card.escuro .navigation ul .change .dark {
+    background-color: #2d3436;
+}
+.card.escuro .navigation ul .change .light {
+    background-color: transparent;
+}
+
 /* Configurações do destaque */
 
 .destact {

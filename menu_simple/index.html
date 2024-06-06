@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar Menu Simple</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-apple'></i>
+                <div class="logo_name">Pedro Batista</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-rounded' ></i>
+                    <span class="links_name">Message</span>
+                </a>
+                <span class="tooltip">Message</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="links_name">Log out</span>
+                </a>
+                <span class="tooltip">Log out</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="profile.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Pedro Batista</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i> 
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        btn.onclick = function() {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
